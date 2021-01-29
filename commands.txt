@@ -1,0 +1,19 @@
+pwd --> present working directory
+ls --> list all the files
+cat  --> print the data from the file
+mkdir  --> create directory
+cd --> change directory
+config 
+touch --> create a file  Ex: touch one.txt
+echo
+git init
+git add
+git log 
+git status
+git commit -m  (m-->message) 
+git log --oneline 
+git checkout
+git checkout master
+git config --global user.name
+git congig --global user.email
+
