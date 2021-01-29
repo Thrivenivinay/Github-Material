@@ -17,3 +17,68 @@ git checkout master
 git config --global user.name
 git congig --global user.email
 
+for creation
+
+SACET 101A@DESKTOP-MVBH2BU MINGW64 /c/Users/SACET 101A/Desktop/github training (master)
+$ git add .
+
+SACET 101A@DESKTOP-MVBH2BU MINGW64 /c/Users/SACET 101A/Desktop/github training (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   commands.txt
+
+
+SACET 101A@DESKTOP-MVBH2BU MINGW64 /c/Users/SACET 101A/Desktop/github training (master)
+$ git commit -m "commands file added"
+[master (root-commit) e8f9ae1] commands file added
+ 1 file changed, 19 insertions(+)
+ create mode 100644 commands.txt
+
+SACET 101A@DESKTOP-MVBH2BU MINGW64 /c/Users/SACET 101A/Desktop/github training (master)
+$ git log
+commit e8f9ae12036f10a59ba6c649c44cd33d757f0175 (HEAD -> master)
+Author: APSSDC <apssdc@gmail.com>
+Date:   Fri Jan 29 14:41:09 2021 +0530
+
+    commands file added
+
+SACET 101A@DESKTOP-MVBH2BU MINGW64 /c/Users/SACET 101A/Desktop/github training (master)
+$ git log --oneline
+e8f9ae1 (HEAD -> master) commands file added
+
+SACET 101A@DESKTOP-MVBH2BU MINGW64 /c/Users/SACET 101A/Desktop/github training (master)
+$ git remote add rem
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+SACET 101A@DESKTOP-MVBH2BU MINGW64 /c/Users/SACET 101A/Desktop/github training (master)
+$ git remote add rem https://github.com/Thrivenivinay/Github-Material.git
+
+SACET 101A@DESKTOP-MVBH2BU MINGW64 /c/Users/SACET 101A/Desktop/github training (master)
+$ git remote
+rem
+
+SACET 101A@DESKTOP-MVBH2BU MINGW64 /c/Users/SACET 101A/Desktop/github training (master)
+$ git push rem master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 422 bytes | 422.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Thrivenivinay/Github-Material.git
+ * [new branch]      master -> master
